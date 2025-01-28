@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(back.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.timing{
+    font-size: 40px;
+    color: whitesmoke;
+}
+.content{
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:black;
+}
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    transform: rotate(360deg);
+    animation: animate 2s linear infinite;
+}
+hr{
+    margin: 30px auto;
+    border: 1.5px solid;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+ @keyframes animate{
+    0%{
+        transform: rotateY(360deg) scale(2);
+    }
+    50%{
+        transform: rotateX(360deg) scale(1);
+    }
+    100%{
+        transform: rotateZ(360deg) scale(1);
+    }
+} 
+.gg{
+    color: black;
+    font-size: 30px;
+    
+}

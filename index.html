@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comming soon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+   <body>
+    <div class="gg">"Crafting Architectural Dreams" </div>
+        <div class="content">
+        <p>"Designing the Future, One Vision at a Time-Website Launching Soon!"</p>
+        <h1>WE ARE COMING SOON....!</h1>
+        <hr color="black">
+        <div class="timing">00 : 00 : 00 : 00</div>
+        </div>
+     <script>
+             let customDate = new Date("March 1, 2025 12:00:00").getTime();
+             let timer = setInterval(timing, 1000);
+             function timing(){
+                let now = new Date().getTime();
+                let x = customDate - now;
+                if(x > 0){
+                    let days = Math.floor(x / (1000*60*60*24));
+                    let hours = Math.floor((x % (1000*60*60*24)) / (1000*60*60));
+                    let mins = Math.floor((x % (1000*60*60)) / (1000*60));
+                    let secs = Math.floor((x % (1000*60)) / 1000);
+
+                    let time = `${days}d : ${hours}h : ${mins}m : ${secs}s`;
+                    document.querySelector('.timing').innerHTML = time;
+                }
+             }
+     </script>
+   </body>
+</html>
